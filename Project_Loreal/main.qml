@@ -32,20 +32,17 @@ ApplicationWindow {
                     id: rectangle3
                     x: 95
                     y: 283
-                    width: 230
+                    width: 205
                     height: 27
                     color: "#ffffff"
                     TextInput {
                         id: textInput
                         x: 3
                         y: 3
-                        width: 230
+                        width: 199
                         height: 27
                         text: qsTr("")
                         font.pixelSize: 15
-	                onEditingFinished: {
-	                    user.set_patient_name(textInput.text)
-	                }
                     }
                 }
 
@@ -207,6 +204,18 @@ ApplicationWindow {
                     width: 181
                     height: 14
                     font.pixelSize: 12
+                }
+
+                Button {
+                    id: button7
+                    x: 311
+                    y: 282
+                    width: 59
+                    height: 29
+                    text: qsTr("Enter")
+                    onClicked: {
+                        user.set_patient_name(textInput.text)
+                    }
                 }
             }
         }
