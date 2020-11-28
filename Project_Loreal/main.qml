@@ -253,7 +253,7 @@ ApplicationWindow {
                     height: 74
                     text: "+"
                     onClicked: {
-                        user.image('1')
+                        webcam.image('1')
                     }
                 }
 
@@ -274,7 +274,7 @@ ApplicationWindow {
                     text: qsTr("Capture")
                     font.pointSize: 9
                     onClicked: {
-                        user.capture(button.action)
+                        webcam.capture(button.action)
                     }
                 }
             }

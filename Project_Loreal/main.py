@@ -17,7 +17,7 @@ if __name__ == "__main__":
     webcam = Webcam()
 
     engine.rootContext().setContextProperty("user", Users)
-    engine.rootContext().setContextProperty("user",webcam)
+    engine.rootContext().setContextProperty("webcam",webcam)
 
     engine.load(os.path.join(os.path.dirname(__file__), "main.qml"))
 
