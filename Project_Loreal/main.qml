@@ -233,6 +233,49 @@ ApplicationWindow {
                     width: 343
                     height: 318
                     color: "#5c5656"
+
+                    Image {
+                        id: image9
+                        x: 6
+                        y: 9
+                        width: 330
+                        height: 299
+                        source: "image.png"
+                        fillMode: Image.PreserveAspectFit
+                    }
+                }
+
+                RoundButton {
+                    id: roundButton2
+                    x: 162
+                    y: 61
+                    width: 77
+                    height: 74
+                    text: "+"
+                    onClicked: {
+                        user.image('1')
+                    }
+                }
+
+                Image {
+                    id: image10
+                    x: 162
+                    y: 54
+                    width: 78
+                    height: 89
+                    source: "images/Camara.png"
+                    fillMode: Image.PreserveAspectFit
+                }
+
+                Button {
+                    id: button8
+                    x: 149
+                    y: 501
+                    text: qsTr("Capture")
+                    font.pointSize: 9
+                    onClicked: {
+                        user.capture(button.action)
+                    }
                 }
             }
         }
