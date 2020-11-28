@@ -12,6 +12,8 @@ from Webcam import Webcam
 
 if __name__ == "__main__":
     app = QGuiApplication(sys.argv)
+
+    #Object instances
     engine = QQmlApplicationEngine()
     Users = Users()
     webcam = Webcam()
