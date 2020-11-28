@@ -7,7 +7,7 @@ from PySide2.QtQml import QQmlApplicationEngine
 
 from Users import Users
 from Model import Model
-#from Webcam import Webcam
+from Webcam import Webcam
 
 
 if __name__ == "__main__":
