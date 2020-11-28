@@ -2,15 +2,23 @@
 from PySide2 import QtCore
 from Users import User
 
+from keras.models import load_model
+import keras
+
 class Model(QtCore.QObject):
 
     def __init__(self):
-        QObject.__init__(self)
+        QtCore.QObject.__init__(self)
 
-    model_path = "/"
+    model_path = "./Models/classification_model.h5"
 
     def load_model(self):
-        pass
+        self.model = load_model(self.model_path)
+        print("===========================================")
+        print("Model Loaded")
+        print(keras.models)
+        print("===========================================")
+
 
     def verify_inputs(user_input):
         print("==============Verification==================")
