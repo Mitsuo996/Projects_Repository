@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 4.13.3, 2020-11-28T12:50:38. -->
+<!-- Written by QtCreator 4.13.3, 2020-11-28T15:54:12. -->
 <qtcreator>
  <data>
   <variable>EnvironmentId</variable>
@@ -167,12 +167,12 @@
     <valuelist type="QVariantList" key="CustomOutputParsers"/>
     <value type="int" key="PE.EnvironmentAspect.Base">2</value>
     <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">main</value>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">PythonEditor.RunConfiguration./Users/mitsuoozawa/Desktop/Project_Loreal/main.py</value>
-    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">/Users/mitsuoozawa/Desktop/Project_Loreal/main.py</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">main2</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">PythonEditor.RunConfiguration./Users/mitsuoozawa/Documents/GitHub/Projects_Repository/Project_Loreal/main.py</value>
+    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">/Users/mitsuoozawa/Documents/GitHub/Projects_Repository/Project_Loreal/main.py</value>
     <value type="bool" key="PythonEditor.RunConfiguation.Buffered">false</value>
     <value type="QString" key="PythonEditor.RunConfiguation.Interpreter">{967e4fda-916d-49ff-938f-22d9a743b039}</value>
-    <value type="QString" key="PythonEditor.RunConfiguation.Script">/Users/mitsuoozawa/Desktop/Project_Loreal/main.py</value>
+    <value type="QString" key="PythonEditor.RunConfiguation.Script">/Users/mitsuoozawa/Documents/GitHub/Projects_Repository/Project_Loreal/main.py</value>
     <value type="QString" key="RunConfiguration.Arguments"></value>
     <value type="bool" key="RunConfiguration.Arguments.multi">false</value>
     <value type="QString" key="RunConfiguration.OverrideDebuggerStartup"></value>
@@ -181,8 +181,9 @@
     <value type="bool" key="RunConfiguration.UseMultiProcess">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
+    <value type="bool" key="RunConfiguration.UseTerminal">false</value>
     <value type="QString" key="RunConfiguration.WorkingDirectory"></value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/mitsuoozawa/Desktop/Project_Loreal</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/mitsuoozawa/Documents/GitHub/Projects_Repository/Project_Loreal</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.1">
     <value type="QString" key="Analyzer.Perf.CallgraphMode">dwarf</value>
@@ -245,12 +246,12 @@
     <valuelist type="QVariantList" key="CustomOutputParsers"/>
     <value type="int" key="PE.EnvironmentAspect.Base">2</value>
     <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Users</value>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">PythonEditor.RunConfiguration./Users/mitsuoozawa/Desktop/Project_Loreal/Users.py</value>
-    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">/Users/mitsuoozawa/Desktop/Project_Loreal/Users.py</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Users2</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">PythonEditor.RunConfiguration./Users/mitsuoozawa/Documents/GitHub/Projects_Repository/Project_Loreal/Users.py</value>
+    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">/Users/mitsuoozawa/Documents/GitHub/Projects_Repository/Project_Loreal/Users.py</value>
     <value type="bool" key="PythonEditor.RunConfiguation.Buffered">false</value>
     <value type="QString" key="PythonEditor.RunConfiguation.Interpreter"></value>
-    <value type="QString" key="PythonEditor.RunConfiguation.Script">/Users/mitsuoozawa/Desktop/Project_Loreal/Users.py</value>
+    <value type="QString" key="PythonEditor.RunConfiguation.Script">/Users/mitsuoozawa/Documents/GitHub/Projects_Repository/Project_Loreal/Users.py</value>
     <value type="QString" key="RunConfiguration.Arguments"></value>
     <value type="bool" key="RunConfiguration.Arguments.multi">false</value>
     <value type="QString" key="RunConfiguration.OverrideDebuggerStartup"></value>
@@ -260,7 +261,7 @@
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
     <value type="QString" key="RunConfiguration.WorkingDirectory"></value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/mitsuoozawa/Desktop/Project_Loreal</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/mitsuoozawa/Documents/GitHub/Projects_Repository/Project_Loreal</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.10">
     <value type="QString" key="Analyzer.Perf.CallgraphMode">dwarf</value>
@@ -323,12 +324,12 @@
     <valuelist type="QVariantList" key="CustomOutputParsers"/>
     <value type="int" key="PE.EnvironmentAspect.Base">2</value>
     <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Man</value>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">PythonEditor.RunConfiguration./Users/mitsuoozawa/Desktop/Project_Loreal/images/Man.png</value>
-    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">/Users/mitsuoozawa/Desktop/Project_Loreal/images/Man.png</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Body2</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">PythonEditor.RunConfiguration./Users/mitsuoozawa/Documents/GitHub/Projects_Repository/Project_Loreal/images/Body.PNG</value>
+    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">/Users/mitsuoozawa/Documents/GitHub/Projects_Repository/Project_Loreal/images/Body.PNG</value>
     <value type="bool" key="PythonEditor.RunConfiguation.Buffered">false</value>
     <value type="QString" key="PythonEditor.RunConfiguation.Interpreter"></value>
-    <value type="QString" key="PythonEditor.RunConfiguation.Script">/Users/mitsuoozawa/Desktop/Project_Loreal/images/Man.png</value>
+    <value type="QString" key="PythonEditor.RunConfiguation.Script">/Users/mitsuoozawa/Documents/GitHub/Projects_Repository/Project_Loreal/images/Body.PNG</value>
     <value type="QString" key="RunConfiguration.Arguments"></value>
     <value type="bool" key="RunConfiguration.Arguments.multi">false</value>
     <value type="QString" key="RunConfiguration.OverrideDebuggerStartup"></value>
@@ -338,7 +339,7 @@
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
     <value type="QString" key="RunConfiguration.WorkingDirectory"></value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/mitsuoozawa/Desktop/Project_Loreal/images</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/mitsuoozawa/Documents/GitHub/Projects_Repository/Project_Loreal/images</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.11">
     <value type="QString" key="Analyzer.Perf.CallgraphMode">dwarf</value>
@@ -401,12 +402,12 @@
     <valuelist type="QVariantList" key="CustomOutputParsers"/>
     <value type="int" key="PE.EnvironmentAspect.Base">2</value>
     <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">prevent</value>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">PythonEditor.RunConfiguration./Users/mitsuoozawa/Desktop/Project_Loreal/images/prevent.png</value>
-    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">/Users/mitsuoozawa/Desktop/Project_Loreal/images/prevent.png</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">health_12</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">PythonEditor.RunConfiguration./Users/mitsuoozawa/Documents/GitHub/Projects_Repository/Project_Loreal/images/health_1.png</value>
+    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">/Users/mitsuoozawa/Documents/GitHub/Projects_Repository/Project_Loreal/images/health_1.png</value>
     <value type="bool" key="PythonEditor.RunConfiguation.Buffered">false</value>
     <value type="QString" key="PythonEditor.RunConfiguation.Interpreter"></value>
-    <value type="QString" key="PythonEditor.RunConfiguation.Script">/Users/mitsuoozawa/Desktop/Project_Loreal/images/prevent.png</value>
+    <value type="QString" key="PythonEditor.RunConfiguation.Script">/Users/mitsuoozawa/Documents/GitHub/Projects_Repository/Project_Loreal/images/health_1.png</value>
     <value type="QString" key="RunConfiguration.Arguments"></value>
     <value type="bool" key="RunConfiguration.Arguments.multi">false</value>
     <value type="QString" key="RunConfiguration.OverrideDebuggerStartup"></value>
@@ -416,7 +417,7 @@
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
     <value type="QString" key="RunConfiguration.WorkingDirectory"></value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/mitsuoozawa/Desktop/Project_Loreal/images</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/mitsuoozawa/Documents/GitHub/Projects_Repository/Project_Loreal/images</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.12">
     <value type="QString" key="Analyzer.Perf.CallgraphMode">dwarf</value>
@@ -479,12 +480,12 @@
     <valuelist type="QVariantList" key="CustomOutputParsers"/>
     <value type="int" key="PE.EnvironmentAspect.Base">2</value>
     <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">logo</value>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">PythonEditor.RunConfiguration./Users/mitsuoozawa/Desktop/Project_Loreal/images/logo.png</value>
-    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">/Users/mitsuoozawa/Desktop/Project_Loreal/images/logo.png</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">prevent2</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">PythonEditor.RunConfiguration./Users/mitsuoozawa/Documents/GitHub/Projects_Repository/Project_Loreal/images/prevent.png</value>
+    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">/Users/mitsuoozawa/Documents/GitHub/Projects_Repository/Project_Loreal/images/prevent.png</value>
     <value type="bool" key="PythonEditor.RunConfiguation.Buffered">false</value>
     <value type="QString" key="PythonEditor.RunConfiguation.Interpreter"></value>
-    <value type="QString" key="PythonEditor.RunConfiguation.Script">/Users/mitsuoozawa/Desktop/Project_Loreal/images/logo.png</value>
+    <value type="QString" key="PythonEditor.RunConfiguation.Script">/Users/mitsuoozawa/Documents/GitHub/Projects_Repository/Project_Loreal/images/prevent.png</value>
     <value type="QString" key="RunConfiguration.Arguments"></value>
     <value type="bool" key="RunConfiguration.Arguments.multi">false</value>
     <value type="QString" key="RunConfiguration.OverrideDebuggerStartup"></value>
@@ -494,7 +495,7 @@
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
     <value type="QString" key="RunConfiguration.WorkingDirectory"></value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/mitsuoozawa/Desktop/Project_Loreal/images</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/mitsuoozawa/Documents/GitHub/Projects_Repository/Project_Loreal/images</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.13">
     <value type="QString" key="Analyzer.Perf.CallgraphMode">dwarf</value>
@@ -557,12 +558,12 @@
     <valuelist type="QVariantList" key="CustomOutputParsers"/>
     <value type="int" key="PE.EnvironmentAspect.Base">2</value>
     <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Women</value>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">PythonEditor.RunConfiguration./Users/mitsuoozawa/Desktop/Project_Loreal/images/Women.png</value>
-    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">/Users/mitsuoozawa/Desktop/Project_Loreal/images/Women.png</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">location2</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">PythonEditor.RunConfiguration./Users/mitsuoozawa/Documents/GitHub/Projects_Repository/Project_Loreal/images/location.png</value>
+    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">/Users/mitsuoozawa/Documents/GitHub/Projects_Repository/Project_Loreal/images/location.png</value>
     <value type="bool" key="PythonEditor.RunConfiguation.Buffered">false</value>
     <value type="QString" key="PythonEditor.RunConfiguation.Interpreter"></value>
-    <value type="QString" key="PythonEditor.RunConfiguation.Script">/Users/mitsuoozawa/Desktop/Project_Loreal/images/Women.png</value>
+    <value type="QString" key="PythonEditor.RunConfiguation.Script">/Users/mitsuoozawa/Documents/GitHub/Projects_Repository/Project_Loreal/images/location.png</value>
     <value type="QString" key="RunConfiguration.Arguments"></value>
     <value type="bool" key="RunConfiguration.Arguments.multi">false</value>
     <value type="QString" key="RunConfiguration.OverrideDebuggerStartup"></value>
@@ -572,7 +573,7 @@
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
     <value type="QString" key="RunConfiguration.WorkingDirectory"></value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/mitsuoozawa/Desktop/Project_Loreal/images</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/mitsuoozawa/Documents/GitHub/Projects_Repository/Project_Loreal/images</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.14">
     <value type="QString" key="Analyzer.Perf.CallgraphMode">dwarf</value>
@@ -635,12 +636,12 @@
     <valuelist type="QVariantList" key="CustomOutputParsers"/>
     <value type="int" key="PE.EnvironmentAspect.Base">2</value>
     <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">main.pyproject</value>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">PythonEditor.RunConfiguration./Users/mitsuoozawa/Desktop/Project_Loreal/main.pyproject.user</value>
-    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">/Users/mitsuoozawa/Desktop/Project_Loreal/main.pyproject.user</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Webcam2</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">PythonEditor.RunConfiguration./Users/mitsuoozawa/Documents/GitHub/Projects_Repository/Project_Loreal/Webcam.py</value>
+    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">/Users/mitsuoozawa/Documents/GitHub/Projects_Repository/Project_Loreal/Webcam.py</value>
     <value type="bool" key="PythonEditor.RunConfiguation.Buffered">false</value>
     <value type="QString" key="PythonEditor.RunConfiguation.Interpreter"></value>
-    <value type="QString" key="PythonEditor.RunConfiguation.Script">/Users/mitsuoozawa/Desktop/Project_Loreal/main.pyproject.user</value>
+    <value type="QString" key="PythonEditor.RunConfiguation.Script">/Users/mitsuoozawa/Documents/GitHub/Projects_Repository/Project_Loreal/Webcam.py</value>
     <value type="QString" key="RunConfiguration.Arguments"></value>
     <value type="bool" key="RunConfiguration.Arguments.multi">false</value>
     <value type="QString" key="RunConfiguration.OverrideDebuggerStartup"></value>
@@ -650,7 +651,7 @@
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
     <value type="QString" key="RunConfiguration.WorkingDirectory"></value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/mitsuoozawa/Desktop/Project_Loreal</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/mitsuoozawa/Documents/GitHub/Projects_Repository/Project_Loreal</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.2">
     <value type="QString" key="Analyzer.Perf.CallgraphMode">dwarf</value>
@@ -713,12 +714,12 @@
     <valuelist type="QVariantList" key="CustomOutputParsers"/>
     <value type="int" key="PE.EnvironmentAspect.Base">2</value>
     <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Webcam</value>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">PythonEditor.RunConfiguration./Users/mitsuoozawa/Desktop/Project_Loreal/Webcam.py</value>
-    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">/Users/mitsuoozawa/Desktop/Project_Loreal/Webcam.py</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">main.pyproject2</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">PythonEditor.RunConfiguration./Users/mitsuoozawa/Documents/GitHub/Projects_Repository/Project_Loreal/main.pyproject.user</value>
+    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">/Users/mitsuoozawa/Documents/GitHub/Projects_Repository/Project_Loreal/main.pyproject.user</value>
     <value type="bool" key="PythonEditor.RunConfiguation.Buffered">false</value>
     <value type="QString" key="PythonEditor.RunConfiguation.Interpreter"></value>
-    <value type="QString" key="PythonEditor.RunConfiguation.Script">/Users/mitsuoozawa/Desktop/Project_Loreal/Webcam.py</value>
+    <value type="QString" key="PythonEditor.RunConfiguation.Script">/Users/mitsuoozawa/Documents/GitHub/Projects_Repository/Project_Loreal/main.pyproject.user</value>
     <value type="QString" key="RunConfiguration.Arguments"></value>
     <value type="bool" key="RunConfiguration.Arguments.multi">false</value>
     <value type="QString" key="RunConfiguration.OverrideDebuggerStartup"></value>
@@ -728,7 +729,7 @@
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
     <value type="QString" key="RunConfiguration.WorkingDirectory"></value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/mitsuoozawa/Desktop/Project_Loreal</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/mitsuoozawa/Documents/GitHub/Projects_Repository/Project_Loreal</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.3">
     <value type="QString" key="Analyzer.Perf.CallgraphMode">dwarf</value>
@@ -791,12 +792,12 @@
     <valuelist type="QVariantList" key="CustomOutputParsers"/>
     <value type="int" key="PE.EnvironmentAspect.Base">2</value>
     <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Model</value>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">PythonEditor.RunConfiguration./Users/mitsuoozawa/Desktop/Project_Loreal/Model.py</value>
-    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">/Users/mitsuoozawa/Desktop/Project_Loreal/Model.py</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Women2</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">PythonEditor.RunConfiguration./Users/mitsuoozawa/Documents/GitHub/Projects_Repository/Project_Loreal/images/Women.png</value>
+    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">/Users/mitsuoozawa/Documents/GitHub/Projects_Repository/Project_Loreal/images/Women.png</value>
     <value type="bool" key="PythonEditor.RunConfiguation.Buffered">false</value>
     <value type="QString" key="PythonEditor.RunConfiguation.Interpreter"></value>
-    <value type="QString" key="PythonEditor.RunConfiguation.Script">/Users/mitsuoozawa/Desktop/Project_Loreal/Model.py</value>
+    <value type="QString" key="PythonEditor.RunConfiguation.Script">/Users/mitsuoozawa/Documents/GitHub/Projects_Repository/Project_Loreal/images/Women.png</value>
     <value type="QString" key="RunConfiguration.Arguments"></value>
     <value type="bool" key="RunConfiguration.Arguments.multi">false</value>
     <value type="QString" key="RunConfiguration.OverrideDebuggerStartup"></value>
@@ -806,7 +807,7 @@
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
     <value type="QString" key="RunConfiguration.WorkingDirectory"></value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/mitsuoozawa/Desktop/Project_Loreal</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/mitsuoozawa/Documents/GitHub/Projects_Repository/Project_Loreal/images</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.4">
     <value type="QString" key="Analyzer.Perf.CallgraphMode">dwarf</value>
@@ -869,12 +870,12 @@
     <valuelist type="QVariantList" key="CustomOutputParsers"/>
     <value type="int" key="PE.EnvironmentAspect.Base">2</value>
     <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">health_1</value>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">PythonEditor.RunConfiguration./Users/mitsuoozawa/Desktop/Project_Loreal/images/health_1.png</value>
-    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">/Users/mitsuoozawa/Desktop/Project_Loreal/images/health_1.png</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Camara2</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">PythonEditor.RunConfiguration./Users/mitsuoozawa/Documents/GitHub/Projects_Repository/Project_Loreal/images/Camara.png</value>
+    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">/Users/mitsuoozawa/Documents/GitHub/Projects_Repository/Project_Loreal/images/Camara.png</value>
     <value type="bool" key="PythonEditor.RunConfiguation.Buffered">false</value>
     <value type="QString" key="PythonEditor.RunConfiguation.Interpreter"></value>
-    <value type="QString" key="PythonEditor.RunConfiguation.Script">/Users/mitsuoozawa/Desktop/Project_Loreal/images/health_1.png</value>
+    <value type="QString" key="PythonEditor.RunConfiguation.Script">/Users/mitsuoozawa/Documents/GitHub/Projects_Repository/Project_Loreal/images/Camara.png</value>
     <value type="QString" key="RunConfiguration.Arguments"></value>
     <value type="bool" key="RunConfiguration.Arguments.multi">false</value>
     <value type="QString" key="RunConfiguration.OverrideDebuggerStartup"></value>
@@ -884,7 +885,7 @@
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
     <value type="QString" key="RunConfiguration.WorkingDirectory"></value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/mitsuoozawa/Desktop/Project_Loreal/images</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/mitsuoozawa/Documents/GitHub/Projects_Repository/Project_Loreal/images</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.5">
     <value type="QString" key="Analyzer.Perf.CallgraphMode">dwarf</value>
@@ -947,12 +948,12 @@
     <valuelist type="QVariantList" key="CustomOutputParsers"/>
     <value type="int" key="PE.EnvironmentAspect.Base">2</value>
     <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Body</value>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">PythonEditor.RunConfiguration./Users/mitsuoozawa/Desktop/Project_Loreal/images/Body.PNG</value>
-    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">/Users/mitsuoozawa/Desktop/Project_Loreal/images/Body.PNG</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">logo2</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">PythonEditor.RunConfiguration./Users/mitsuoozawa/Documents/GitHub/Projects_Repository/Project_Loreal/images/logo.png</value>
+    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">/Users/mitsuoozawa/Documents/GitHub/Projects_Repository/Project_Loreal/images/logo.png</value>
     <value type="bool" key="PythonEditor.RunConfiguation.Buffered">false</value>
     <value type="QString" key="PythonEditor.RunConfiguation.Interpreter"></value>
-    <value type="QString" key="PythonEditor.RunConfiguation.Script">/Users/mitsuoozawa/Desktop/Project_Loreal/images/Body.PNG</value>
+    <value type="QString" key="PythonEditor.RunConfiguation.Script">/Users/mitsuoozawa/Documents/GitHub/Projects_Repository/Project_Loreal/images/logo.png</value>
     <value type="QString" key="RunConfiguration.Arguments"></value>
     <value type="bool" key="RunConfiguration.Arguments.multi">false</value>
     <value type="QString" key="RunConfiguration.OverrideDebuggerStartup"></value>
@@ -962,7 +963,7 @@
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
     <value type="QString" key="RunConfiguration.WorkingDirectory"></value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/mitsuoozawa/Desktop/Project_Loreal/images</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/mitsuoozawa/Documents/GitHub/Projects_Repository/Project_Loreal/images</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.6">
     <value type="QString" key="Analyzer.Perf.CallgraphMode">dwarf</value>
@@ -1025,12 +1026,12 @@
     <valuelist type="QVariantList" key="CustomOutputParsers"/>
     <value type="int" key="PE.EnvironmentAspect.Base">2</value>
     <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">LOreal-Logo</value>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">PythonEditor.RunConfiguration./Users/mitsuoozawa/Desktop/Project_Loreal/images/LOreal-Logo.png</value>
-    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">/Users/mitsuoozawa/Desktop/Project_Loreal/images/LOreal-Logo.png</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">LOreal-Logo2</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">PythonEditor.RunConfiguration./Users/mitsuoozawa/Documents/GitHub/Projects_Repository/Project_Loreal/images/LOreal-Logo.png</value>
+    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">/Users/mitsuoozawa/Documents/GitHub/Projects_Repository/Project_Loreal/images/LOreal-Logo.png</value>
     <value type="bool" key="PythonEditor.RunConfiguation.Buffered">false</value>
     <value type="QString" key="PythonEditor.RunConfiguation.Interpreter"></value>
-    <value type="QString" key="PythonEditor.RunConfiguation.Script">/Users/mitsuoozawa/Desktop/Project_Loreal/images/LOreal-Logo.png</value>
+    <value type="QString" key="PythonEditor.RunConfiguation.Script">/Users/mitsuoozawa/Documents/GitHub/Projects_Repository/Project_Loreal/images/LOreal-Logo.png</value>
     <value type="QString" key="RunConfiguration.Arguments"></value>
     <value type="bool" key="RunConfiguration.Arguments.multi">false</value>
     <value type="QString" key="RunConfiguration.OverrideDebuggerStartup"></value>
@@ -1040,7 +1041,7 @@
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
     <value type="QString" key="RunConfiguration.WorkingDirectory"></value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/mitsuoozawa/Desktop/Project_Loreal/images</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/mitsuoozawa/Documents/GitHub/Projects_Repository/Project_Loreal/images</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.7">
     <value type="QString" key="Analyzer.Perf.CallgraphMode">dwarf</value>
@@ -1103,12 +1104,12 @@
     <valuelist type="QVariantList" key="CustomOutputParsers"/>
     <value type="int" key="PE.EnvironmentAspect.Base">2</value>
     <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">location</value>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">PythonEditor.RunConfiguration./Users/mitsuoozawa/Desktop/Project_Loreal/images/location.png</value>
-    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">/Users/mitsuoozawa/Desktop/Project_Loreal/images/location.png</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Man2</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">PythonEditor.RunConfiguration./Users/mitsuoozawa/Documents/GitHub/Projects_Repository/Project_Loreal/images/Man.png</value>
+    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">/Users/mitsuoozawa/Documents/GitHub/Projects_Repository/Project_Loreal/images/Man.png</value>
     <value type="bool" key="PythonEditor.RunConfiguation.Buffered">false</value>
     <value type="QString" key="PythonEditor.RunConfiguation.Interpreter"></value>
-    <value type="QString" key="PythonEditor.RunConfiguation.Script">/Users/mitsuoozawa/Desktop/Project_Loreal/images/location.png</value>
+    <value type="QString" key="PythonEditor.RunConfiguation.Script">/Users/mitsuoozawa/Documents/GitHub/Projects_Repository/Project_Loreal/images/Man.png</value>
     <value type="QString" key="RunConfiguration.Arguments"></value>
     <value type="bool" key="RunConfiguration.Arguments.multi">false</value>
     <value type="QString" key="RunConfiguration.OverrideDebuggerStartup"></value>
@@ -1118,7 +1119,7 @@
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
     <value type="QString" key="RunConfiguration.WorkingDirectory"></value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/mitsuoozawa/Desktop/Project_Loreal/images</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/mitsuoozawa/Documents/GitHub/Projects_Repository/Project_Loreal/images</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.8">
     <value type="QString" key="Analyzer.Perf.CallgraphMode">dwarf</value>
@@ -1181,12 +1182,12 @@
     <valuelist type="QVariantList" key="CustomOutputParsers"/>
     <value type="int" key="PE.EnvironmentAspect.Base">2</value>
     <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Camara</value>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">PythonEditor.RunConfiguration./Users/mitsuoozawa/Desktop/Project_Loreal/images/Camara.png</value>
-    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">/Users/mitsuoozawa/Desktop/Project_Loreal/images/Camara.png</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Model2</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">PythonEditor.RunConfiguration./Users/mitsuoozawa/Documents/GitHub/Projects_Repository/Project_Loreal/Model.py</value>
+    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">/Users/mitsuoozawa/Documents/GitHub/Projects_Repository/Project_Loreal/Model.py</value>
     <value type="bool" key="PythonEditor.RunConfiguation.Buffered">false</value>
     <value type="QString" key="PythonEditor.RunConfiguation.Interpreter"></value>
-    <value type="QString" key="PythonEditor.RunConfiguation.Script">/Users/mitsuoozawa/Desktop/Project_Loreal/images/Camara.png</value>
+    <value type="QString" key="PythonEditor.RunConfiguation.Script">/Users/mitsuoozawa/Documents/GitHub/Projects_Repository/Project_Loreal/Model.py</value>
     <value type="QString" key="RunConfiguration.Arguments"></value>
     <value type="bool" key="RunConfiguration.Arguments.multi">false</value>
     <value type="QString" key="RunConfiguration.OverrideDebuggerStartup"></value>
@@ -1196,7 +1197,7 @@
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
     <value type="QString" key="RunConfiguration.WorkingDirectory"></value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/mitsuoozawa/Desktop/Project_Loreal/images</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/mitsuoozawa/Documents/GitHub/Projects_Repository/Project_Loreal</value>
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.9">
     <value type="QString" key="Analyzer.Perf.CallgraphMode">dwarf</value>
@@ -1259,12 +1260,12 @@
     <valuelist type="QVariantList" key="CustomOutputParsers"/>
     <value type="int" key="PE.EnvironmentAspect.Base">2</value>
     <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">health</value>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">PythonEditor.RunConfiguration./Users/mitsuoozawa/Desktop/Project_Loreal/images/health.png</value>
-    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">/Users/mitsuoozawa/Desktop/Project_Loreal/images/health.png</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">health2</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">PythonEditor.RunConfiguration./Users/mitsuoozawa/Documents/GitHub/Projects_Repository/Project_Loreal/images/health.png</value>
+    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">/Users/mitsuoozawa/Documents/GitHub/Projects_Repository/Project_Loreal/images/health.png</value>
     <value type="bool" key="PythonEditor.RunConfiguation.Buffered">false</value>
     <value type="QString" key="PythonEditor.RunConfiguation.Interpreter"></value>
-    <value type="QString" key="PythonEditor.RunConfiguation.Script">/Users/mitsuoozawa/Desktop/Project_Loreal/images/health.png</value>
+    <value type="QString" key="PythonEditor.RunConfiguation.Script">/Users/mitsuoozawa/Documents/GitHub/Projects_Repository/Project_Loreal/images/health.png</value>
     <value type="QString" key="RunConfiguration.Arguments"></value>
     <value type="bool" key="RunConfiguration.Arguments.multi">false</value>
     <value type="QString" key="RunConfiguration.OverrideDebuggerStartup"></value>
@@ -1274,7 +1275,7 @@
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
     <value type="QString" key="RunConfiguration.WorkingDirectory"></value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/mitsuoozawa/Desktop/Project_Loreal/images</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/mitsuoozawa/Documents/GitHub/Projects_Repository/Project_Loreal/images</value>
    </valuemap>
    <value type="int" key="ProjectExplorer.Target.RunConfigurationCount">15</value>
   </valuemap>
