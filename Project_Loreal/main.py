@@ -7,17 +7,17 @@ from PySide2.QtQml import QQmlApplicationEngine
 
 from Users import Users
 from Model import Model
-#from Webcam import Webcam
+from Webcam import Webcam
 
 
 if __name__ == "__main__":
     app = QGuiApplication(sys.argv)
     engine = QQmlApplicationEngine()
     Users = Users()
-    #webcam = Webcam()
+    webcam = Webcam()
 
     engine.rootContext().setContextProperty("user", Users)
-    #engine.rootContext().setContextProperty("user",webcam)
+    engine.rootContext().setContextProperty("user",webcam)
 
     engine.load(os.path.join(os.path.dirname(__file__), "main.qml"))
 
