@@ -1,3 +1,3 @@
 {
-    "files": ["main.py","main.qml","Users.py","Webcam.py","Model.py"]
+    "files": ["Model.py","Users.py","Page3.qml","images/LOreal-Logo.png","Page1Form.ui.qml","Page2Form.ui.qml","images/health.png","images/Women.png","images/health_1.png","images/Body.PNG","Webcam.py","images/location.png","Page4Form.ui.qml","Page4.qml","main.pyproject.user","Page3Form.ui.qml","images/prevent.png","images/Camara.png","images/Man.png","images/logo.png","main.py","main.qml"]
 }
