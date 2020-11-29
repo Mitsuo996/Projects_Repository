@@ -4,6 +4,7 @@ from Users import User
 
 from keras.models import load_model
 import keras
+import tensorflow
 
 class Model(QtCore.QObject):
 

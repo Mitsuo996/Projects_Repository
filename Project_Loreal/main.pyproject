@@ -1,3 +1,3 @@
 {
-    "files": ["main.py","Page4Form.ui.qml","images/health.png","Page3Form.ui.qml","Model.py","Page4.qml","images/logo.png","images/prevent.png","images/location.png","images/LOreal-Logo.png","main.qml","images/health_1.png","Users.py","images/Women.png","Page1Form.ui.qml","images/Man.png","Page2Form.ui.qml","Page3.qml","images/Camara.png","Webcam.py","images/Body.PNG","Models/classification_model.h5"]
+    "files": ["images/health.png","images/Women.png","Page2Form.ui.qml","Page3Form.ui.qml","Users.py","Webcam.py","Model.py","main.py","images/logo.png","Page3.qml","Page1Form.ui.qml","Models/classification_model.h5","images/Man.png","images/Body.PNG","images/LOreal-Logo.png","Page4Form.ui.qml","images/prevent.png","images/Camara.png","images/location.png","images/health_1.png","Page4.qml","main.qml","Models/LorealEffNetB3.h5","Models/LorealEffNetB3-512.h5","Models/Model1.h5"]
 }
