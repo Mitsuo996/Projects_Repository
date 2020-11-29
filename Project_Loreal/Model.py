@@ -17,7 +17,7 @@ class Model(QtCore.QObject):
         self.model = load_model(self.model_path)
         print("===========================================")
         print("Model Loaded")
-        print(keras.models)
+        print(self.models)
 
 
     def verify_inputs(user_input):
