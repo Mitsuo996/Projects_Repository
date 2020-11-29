@@ -2,7 +2,6 @@
 from PySide2.QtCore import Slot,QObject
 import cv2
 
-#TEST
 cam = cv2.VideoCapture(0)
 
 class Webcam:
@@ -42,11 +41,3 @@ class Webcam(QObject) : #Communication between Python and Qt
             cam.release()
             cv2.destroyAllWindows()
 
-
-
-
-
-
-
-
-#Hello
