@@ -147,7 +147,7 @@ ApplicationWindow {
                     onClicked:
                     {
                         user.set_Gender('Man')
-                        //gender.text = "Patient = Man"
+                        gender.text = "Patient = Man"
                     }
 
                 }
@@ -164,7 +164,7 @@ ApplicationWindow {
                     onClicked:
                     {
                         user.set_Gender('Woman')
-                        //gender.text = "Patient = Woman"
+                        gender.text = "Patient = Woman"
                     }
                 }
 
@@ -216,11 +216,6 @@ ApplicationWindow {
                     text: qsTr("Enter")
                     onClicked: {
                         user.set_patient_name(textInput.text)
-                    }
-
-                    Connections {
-                        target: button7
-                        onClicked: gender.text = send_gender
                     }
                 }
             }
@@ -502,7 +497,11 @@ ApplicationWindow {
             }
         }
     }
-
+    Connections {
+        target: user
+        // Signal Handler
+        onUserGender: gender.text = user_gender_tx
+    }
     footer: TabBar {
         id: tabBar
         currentIndex: swipeView.currentIndex

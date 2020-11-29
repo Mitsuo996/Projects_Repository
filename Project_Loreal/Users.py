@@ -10,46 +10,14 @@ class User:
 
 class Users(QObject) : #Communication between Python and Qt
 
+    #Signal send to the interface
+    userGender = pyqtSignal(str, arguments=['user_gender_tx'])
+
     list_users = {"":User()}
     active_user = ""
 
     def __init__(self):
         QObject.__init__(self)
-
-    def update_user(self):
-        print("============================================")
-        print("User: ",self.active_user)
-        print("Age: ",self.list_users[self.active_user].age)
-        print("Gender: ",self.list_users[self.active_user].gender)
-        print("Location: ",self.list_users[self.active_user].location)
-        print("Image: ",self.list_users[self.active_user].image)
-        print("============================================")
-
-        self.send_gender()
-
-
-
-    def load_User(self,user_name):
-
-        if user_name in self.list_users:
-            print("This User already Exist, conected to this user")
-            self.active_user = user_name
-            self.update_user()
-        else:
-            new_user = User()
-            self.list_users[user_name] = new_user
-
-            print("New user added: ",user_name)
-            self.active_user = user_name
-
-        return self.active_user
-
-    #Signal send to the interface
-    user_gender = pyqtSignal(str, arguments=['send_gender'])
-
-    @pyqtSlot(str)
-    def send_gender(self):
-        self.user_gender.emit('si funciona')
 
     #Signals received from the interface
     @pyqtSlot(str)
@@ -62,9 +30,36 @@ class Users(QObject) : #Communication between Python and Qt
 
     @pyqtSlot(str)
     def set_patient_age(self,age):
-      self.list_users[self.active_user].age = age
+        self.list_users[self.active_user].age = age
 
     @pyqtSlot(str)
     def set_location(self,body_part):
-      self.list_users[self.active_user].location = body_part
+        self.list_users[self.active_user].location = body_part
+
+    def update_user(self):
+        print("============================================")
+        print("User: ",self.active_user)
+        print("Age: ",self.list_users[self.active_user].age)
+        print("Gender: ",self.list_users[self.active_user].gender)
+        print("Location: ",self.list_users[self.active_user].location)
+        print("Image: ",self.list_users[self.active_user].image)
+        print("============================================")
+        self.userGender.emit('Patient = '+self.list_users[self.active_user].gender)
+
+
+
+    def load_User(self,user_name):
+
+        if user_name in self.list_users:
+            print("This User already Exist, conected to this user")
+            self.active_user = user_name
+            self.update_user()
+        else:
+            new_user = User()
+            self.list_users[user_name] = new_user
+            print("New user added: ",user_name)
+            self.active_user = user_name
+            self.update_user()
+
+
 
