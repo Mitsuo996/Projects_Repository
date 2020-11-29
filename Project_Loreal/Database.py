@@ -16,6 +16,9 @@ class Database(QObject):
                               Location text,
                               Diagnosis text);''')
 
+    def __del__(self):
+        self.conn.close()
+
     def add_user(self,User):
         patient_name= User.name
         age = User.age
@@ -30,7 +33,6 @@ class Database(QObject):
                                   FROM submits;''')
         for row in cursor:
           print(row)
-        self.conn.close()
 
     #def search_user(self):
 
