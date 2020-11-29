@@ -23,7 +23,7 @@ class Model(QObject):
         QObject.__init__(self)
         self.input_users = Users
 
-    model_path = "./Models/Model1.h5"
+    model_path = "./Models/LorealEffNetB3.h5"
 
     def load_model(self):
         self.model = load_model(self.model_path)
@@ -48,16 +48,31 @@ class Model(QObject):
             print('Invalid Input: No image detected')
             return False
 
-    def predict_model():
-        pass
+    def predict_model(self):
 
-    def train_model():
-        pass
+        #Read image name
+        image = tf.io.read_file("./Inputs/image.jpg")
+        image = tf.io.decode_jpeg(image, channels = 3)
+        image = tf.image.resize(image, [384,384],antialias=True)
+        image = tf.cast(image, tf.float32)/255
+        image = tf.image.random_flip_left_right(image)
+        image = tf.image.random_saturation(image, 0.7, 1.3)
+        image = tf.image.random_contrast(image, 0.8, 1.2)
+        image = tf.image.random_brightness(image, 0.1)
+
+        result = self.model.predict(np.array([image,]))
+        print (result[0][0])
+        if result[0][0] > 0.5:
+            print ("maligno")
+        else:
+            print("benigno")
+
 
     @pyqtSlot(str)
     def search_result(self,arg):
       print("===========================================")
       print("Model: Start")
+      self.predict_model()
       if self.verify_inputs() == True:
           #Preprocess Image
           #Load Image
