@@ -10,7 +10,7 @@ class User:
 
 class Users(QObject) : #Communication between Python and Qt
 
-    list_users = {}
+    list_users = {"":User()}
     active_user = ""
 
     def __init__(self):

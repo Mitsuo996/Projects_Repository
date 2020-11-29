@@ -27,7 +27,15 @@ class Model(QObject):
         print("Gender: ",self.input_users.list_users[self.input_users.active_user].gender)
         print("Location: ",self.input_users.list_users[self.input_users.active_user].location)
         print("Image: ",self.input_users.list_users[self.input_users.active_user].image)
-        print("============================================")
+        print("===========================================")
+
+
+        if(self.input_users.list_users[self.input_users.active_user].image !=""):
+            print('Valid Input')
+            return True
+        else:
+            print('Invalid Input: No image detected')
+            return False
 
     def predict_model():
         pass
@@ -39,6 +47,12 @@ class Model(QObject):
     def search_result(self,arg):
       print("===========================================")
       print("Model: Start")
-      self.verify_inputs()
+      if self.verify_inputs() == True:
+          #Preprocess Image
+          #Load Image
+          #Send Result
+          pass
+      else:
+          pass
 
 
