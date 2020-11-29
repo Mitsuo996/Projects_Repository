@@ -11,7 +11,7 @@ class User:
 class Users(QObject) : #Communication between Python and Qt
 
     #Signal send to the interface
-    textResult = pyqtSignal(str, arguments=['user_gender_tx'])
+    userGender = pyqtSignal(str, arguments=['user_gender_tx'])
 
     list_users = {"":User()}
     active_user = ""
@@ -44,7 +44,7 @@ class Users(QObject) : #Communication between Python and Qt
         print("Location: ",self.list_users[self.active_user].location)
         print("Image: ",self.list_users[self.active_user].image)
         print("============================================")
-        self.textResult.emit('Patient = '+self.list_users[self.active_user].gender)
+        self.userGender.emit('Patient = '+self.list_users[self.active_user].gender)
 
 
 
@@ -57,9 +57,9 @@ class Users(QObject) : #Communication between Python and Qt
         else:
             new_user = User()
             self.list_users[user_name] = new_user
-
             print("New user added: ",user_name)
             self.active_user = user_name
+            self.update_user()
 
 
 

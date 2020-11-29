@@ -500,7 +500,7 @@ ApplicationWindow {
     Connections {
         target: user
         // Signal Handler
-        onTextResult: gender.text = user_gender_tx
+        onUserGender: gender.text = user_gender_tx
     }
     footer: TabBar {
         id: tabBar
