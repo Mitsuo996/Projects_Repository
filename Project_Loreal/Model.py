@@ -1,10 +1,21 @@
 # This Python file uses the following encoding: utf-8
 from PyQt5.QtCore import QObject, pyqtSignal, pyqtSlot, QUrl
 from Users import User
-
 from keras.models import load_model
 import keras
-import tensorflow
+import pandas as pd
+import numpy as np
+import os
+import random
+import re
+import math
+import time
+from tqdm import tqdm
+from tqdm.keras import TqdmCallback
+import warnings
+import tensorflow as tf
+import tensorflow.keras.backend as K
+import efficientnet.tfkeras as efn
 
 class Model(QObject):
 
@@ -12,7 +23,7 @@ class Model(QObject):
         QObject.__init__(self)
         self.input_users = Users
 
-    model_path = "./Models/classification_model.h5"
+    model_path = "./Models/Model1.h5"
 
     def load_model(self):
         self.model = load_model(self.model_path)
