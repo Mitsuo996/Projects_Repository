@@ -13,6 +13,7 @@ ApplicationWindow {
         currentIndex: tabBar.currentIndex
 
 
+
         Page1Form {
             Rectangle {
                 id: rectangle
@@ -463,6 +464,18 @@ ApplicationWindow {
                 }
 
                 Text {
+                    id: text6
+                    x: 109
+                    y: 295
+                    width: 187
+                    height: 29
+                    text: qsTr("")
+                    font.pixelSize: 24
+                    horizontalAlignment: Text.AlignHCenter
+                    font.bold: true
+                }
+
+                Text {
                     id: text4
                     x: 155
                     y: 255
@@ -494,6 +507,7 @@ ApplicationWindow {
                         app_model.search_result(button.action)
                     }
                 }
+
             }
         }
     }
@@ -501,6 +515,11 @@ ApplicationWindow {
         target: user
         // Signal Handler
         onUserGender: gender.text = user_gender_tx
+    }
+    Connections {
+        target: app_model
+        // Signal Handler
+        onUserResult: text6.text = user_result_tx
     }
     footer: TabBar {
         id: tabBar

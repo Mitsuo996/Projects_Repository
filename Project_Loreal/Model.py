@@ -19,6 +19,9 @@ import efficientnet.tfkeras as efn
 
 class Model(QObject):
 
+    #Signal send to the interface
+    userResult = pyqtSignal(str, arguments=['user_result_tx'])
+
     def __init__(self,Users):
         QObject.__init__(self)
         self.input_users = Users
@@ -51,7 +54,7 @@ class Model(QObject):
     def predict_model(self):
 
         #Read image name
-        image= tf.io.read_file("./image.jpg")
+        image = tf.io.read_file("./Inputs/image.jpg")
         image = tf.io.decode_jpeg(image, channels = 3)
         image = tf.image.resize(image, [384,384],antialias=True)
         image = tf.cast(image, tf.float32)/255
@@ -63,8 +66,10 @@ class Model(QObject):
         result = self.model.predict(np.array([image,]))
         print (result[0][0])
         if result[0][0] > 0.5:
+            self.userResult.emit("maligno")
             print ("maligno")
         else:
+            self.userResult.emit("benigno")
             print("benigno")
 
 
@@ -75,7 +80,6 @@ class Model(QObject):
       self.predict_model()
       if self.verify_inputs() == True:
           #Preprocess Image
-          #self.predict_model()
           #Load Image
           #Send Result
           pass
