@@ -3,6 +3,9 @@ from PyQt5.QtCore import QObject, pyqtSignal, pyqtSlot, QUrl
 import cv2
 
 cam = cv2.VideoCapture(0)
+cam.set(3, 384)
+cam.set(4, 384)
+
 
 class Webcam(QObject) : #Communication between Python and Qt
 
@@ -26,12 +29,14 @@ class Webcam(QObject) : #Communication between Python and Qt
             while True:
                 if not cam.isOpened():
                     cam.open(0)
+                    cam.set(3, 384)
+                    cam.set(4, 384)
                 ret, frame = cam.read()
                 if not ret:
                     print("Failed to Grab Frame")
                     break
                 cv2.imshow("Camara", frame)
-                cv2.resizeWindow('Resized Window', 400, 650)
+                cv2.resizeWindow('Resized Window', 384, 384)
 
                 k = cv2.waitKey(1)
                 if k%256 == 32:
