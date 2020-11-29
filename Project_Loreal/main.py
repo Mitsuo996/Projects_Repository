@@ -19,9 +19,8 @@ if __name__ == "__main__":
     Users  = Users()
     webcam = Webcam()
     database = Database()
-    model  = Model(Users,webcam)
+    model  = Model(Users,webcam,database)
     model.load_model()
-    database.add_user(User())
 
     engine.rootContext().setContextProperty("user", Users)
     engine.rootContext().setContextProperty("webcam",webcam)

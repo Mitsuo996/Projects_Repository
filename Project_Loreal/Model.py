@@ -1,7 +1,9 @@
 # This Python file uses the following encoding: utf-8
 from PyQt5.QtCore import QObject, pyqtSignal, pyqtSlot, QUrl
-from Users import User
+
+from Users import Users,User
 from Webcam import Webcam
+from Database import Database
 
 from keras.models import load_model
 import keras
@@ -24,10 +26,11 @@ class Model(QObject):
     #Signal send to the interface
     userResult = pyqtSignal(str, arguments=['user_result_tx'])
 
-    def __init__(self,Users,Webcam):
+    def __init__(self,Users,Webcam,Database):
         QObject.__init__(self)
         self.input_users = Users
         self.input_camera = Webcam
+        self.input_Database = Database
 
     model_path = "./Models/LorealEffNetB3.h5"
 
@@ -38,21 +41,19 @@ class Model(QObject):
         print(self.model)
 
 
-    def verify_inputs(self):
-        print("==============Verification==================")
-        print("Age: ",self.input_users.list_users[self.input_users.active_user].age)
-        print("Gender: ",self.input_users.list_users[self.input_users.active_user].gender)
-        print("Location: ",self.input_users.list_users[self.input_users.active_user].location)
-        print("Image: ",self.input_users.list_users[self.input_users.active_user].image)
+    def save_result(self,result):
+        test_user = self.input_users.list_users[self.input_users.active_user]
+        test_user.name = self.input_users.active_user
+        test_user.result = result
+        print("==============Result==================")
+        print("Name: ",test_user.name)
+        print("Age: ",test_user.age)
+        print("Gender: ",test_user.gender)
+        print("Location: ",test_user.location)
+        print("Diagnosis: ",test_user.result)
         print("===========================================")
+        self.input_Database.add_user(test_user)
 
-
-        if(self.input_users.list_users[self.input_users.active_user].image !=""):
-            print('Valid Input')
-            return True
-        else:
-            print('Invalid Input: No image detected')
-            return False
 
     def predict_model(self):
 
@@ -69,11 +70,12 @@ class Model(QObject):
         result = self.model.predict(np.array([image,]))
         print (result[0][0])
         if result[0][0] > 0.5:
-            self.userResult.emit("maligno")
-            print ("maligno")
+            model_result = "maligno"
+            self.userResult.emit(model_result)
         else:
-            self.userResult.emit("benigno")
-            print("benigno")
+            model_result = "benigno"
+            self.userResult.emit(model_result)
+        self.save_result(model_result)
 
 
     @pyqtSlot(str)
