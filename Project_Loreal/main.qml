@@ -5,7 +5,9 @@ ApplicationWindow {
     width: 400
     height: 650
     visible: true
-    title: qsTr("Melanoma Classification")
+    color: "#00000000"
+    title: qsTr("")
+
 
     SwipeView {
         id: swipeView
@@ -14,12 +16,34 @@ ApplicationWindow {
 
 
 
+
+
+
+
+
+
+
+
+
+
         Page1Form {
             Rectangle {
                 id: rectangle
                 width: 400
                 height: 650
-                color: "#8fa381"
+                radius: 0
+                border.color: "#f7e5e5"
+                gradient: Gradient {
+                    GradientStop {
+                        position: 0.80654
+                        color: "#8fa381"
+                    }
+
+                    GradientStop {
+                        position: 1
+                        color: "#e7eae5"
+                    }
+                }
                 Image {
                     id: image
                     x: 100
@@ -37,6 +61,7 @@ ApplicationWindow {
                     width: 205
                     height: 27
                     color: "#ffffff"
+                    radius: 5
                     TextInput {
                         id: textInput
                         x: 3
@@ -54,6 +79,7 @@ ApplicationWindow {
                     y: 288
                     text: qsTr("Name")
                     font.pixelSize: 14
+                    font.bold: true
                 }
 
                 Text {
@@ -62,6 +88,7 @@ ApplicationWindow {
                     y: 345
                     text: qsTr("Age")
                     font.pixelSize: 14
+                    font.bold: true
                 }
 
                 ComboBox {
@@ -135,6 +162,7 @@ ApplicationWindow {
                     y: 498
                     text: qsTr("Gender")
                     font.pixelSize: 14
+                    font.bold: true
                 }
 
                 RoundButton {
@@ -148,7 +176,7 @@ ApplicationWindow {
                     onClicked:
                     {
                         user.set_Gender('Man')
-                        gender.text = "Patient = Man"
+                        gender.text = "Man"
                     }
 
                 }
@@ -165,7 +193,7 @@ ApplicationWindow {
                     onClicked:
                     {
                         user.set_Gender('Woman')
-                        gender.text = "Patient = Woman"
+                        gender.text = "Woman"
                     }
                 }
 
@@ -201,14 +229,15 @@ ApplicationWindow {
 
                 Text {
                     id: gender
-                    x: 139
+                    x: 113
                     y: 379
                     width: 181
                     height: 14
-                    font.pixelSize: 12
+                    horizontalAlignment: Text.AlignHCenter
+                    font.bold: true
                 }
 
-                Button {
+                RoundButton {
                     id: button7
                     x: 311
                     y: 282
@@ -222,19 +251,48 @@ ApplicationWindow {
             }
         }
 
+
+
+
+
+
+
+
         Page2Form {
             Rectangle {
                 id: rectangle1
                 width: 400
                 height: 650
-                color: "#8fa381"
+                radius: 0
+                gradient: Gradient {
+                    GradientStop {
+                        position: 0.80841
+                        color: "#8fa381"
+                    }
+
+                    GradientStop {
+                        position: 1
+                        color: "#e7eae5"
+                    }
+                }
+                Image {
+                    id: image11
+                    x: 44
+                    y: -25
+                    width: 313
+                    height: 174
+                    source: "images/take_your_time.png"
+                    fillMode: Image.PreserveAspectFit
+                }
+
                 Rectangle {
                     id: rectangle4
-                    x: 27
-                    y: 156
+                    x: 29
+                    y: 120
                     width: 343
                     height: 318
-                    color: "#5c5656"
+                    color: "#c0baba"
+                    radius: 10
 
                     Image {
                         id: image9
@@ -250,10 +308,11 @@ ApplicationWindow {
                     }
                 }
 
+
                 RoundButton {
                     id: roundButton2
-                    x: 162
-                    y: 61
+                    x: 161
+                    y: 451
                     width: 77
                     height: 74
                     text: "+"
@@ -262,26 +321,17 @@ ApplicationWindow {
                     }
                 }
 
+
                 Image {
                     id: image10
-                    x: 162
-                    y: 54
+                    x: 161
+                    y: 444
                     width: 78
                     height: 89
                     source: "images/Camara.png"
                     fillMode: Image.PreserveAspectFit
                 }
 
-                Button {
-                    id: button8
-                    x: 149
-                    y: 501
-                    text: qsTr("Capture")
-                    font.pointSize: 9
-                    onClicked: {
-                        webcam.capture(button.action)
-                    }
-                }
             }
         }
 
@@ -292,15 +342,26 @@ ApplicationWindow {
                 id: rectangle2
                 width: 400
                 height: 650
-                color: "#8fa381"
+                radius: 0
+                gradient: Gradient {
+                    GradientStop {
+                        position: 0.80841
+                        color: "#8fa381"
+                    }
+
+                    GradientStop {
+                        position: 1
+                        color: "#e7eae5"
+                    }
+                }
                 Image {
                     id: image4
-                    x: 40
+                    x: 57
                     y: 0
-                    width: 320
-                    height: 619
+                    width: 280
+                    height: 567
                     source: "images/Body.PNG"
-                    Button {
+                    RoundButton {
                         id: button
                         x: -6
                         y: 414
@@ -315,10 +376,10 @@ ApplicationWindow {
                         }
                     }
 
-                    Button {
+                    RoundButton {
                         id: button1
-                        x: 119
-                        y: 295
+                        x: 101
+                        y: 270
                         width: 84
                         height: 28
                         text: qsTr("Genitals")
@@ -329,10 +390,10 @@ ApplicationWindow {
                         }
                     }
 
-                    Button {
+                    RoundButton {
                         id: button2
-                        x: 238
-                        y: 189
+                        x: 209
+                        y: 155
                         width: 108
                         height: 30
                         text: qsTr("Upper extremity")
@@ -346,10 +407,10 @@ ApplicationWindow {
                         }
                     }
 
-                    Button {
+                    RoundButton {
                         id: button3
-                        x: 239
-                        y: 327
+                        x: 208
+                        y: 286
                         width: 84
                         height: 28
                         text: qsTr("Palms")
@@ -360,7 +421,7 @@ ApplicationWindow {
                         }
                     }
 
-                    Button {
+                    RoundButton {
                         id: button4
                         x: 8
                         y: 100
@@ -375,10 +436,10 @@ ApplicationWindow {
                         }
                     }
 
-                    Button {
+                    RoundButton {
                         id: button5
-                        x: 119
-                        y: 152
+                        x: 103
+                        y: 140
                         width: 77
                         height: 28
                         text: qsTr("Torso")
@@ -389,10 +450,10 @@ ApplicationWindow {
                         }
                     }
 
-                    Button {
+                    RoundButton {
                         id: button6
-                        x: 223
-                        y: 532
+                        x: 220
+                        y: 494
                         width: 97
                         height: 28
                         text: qsTr("Unknown")
@@ -422,25 +483,37 @@ ApplicationWindow {
         Page4Form {
             id: page4Form
 
+
             Rectangle {
                 id: rectangle5
                 width: 400
                 height: 650
-                color: "#8fa381"
+                radius: 0
+                gradient: Gradient {
+                    GradientStop {
+                        position: 0.80607
+                        color: "#8fa381"
+                    }
+
+                    GradientStop {
+                        position: 1
+                        color: "#e7eae5"
+                    }
+                }
                 Image {
                     id: image6
-                    x: 27
-                    y: 490
-                    width: 106
-                    height: 107
+                    x: 29
+                    y: 441
+                    width: 80
+                    height: 92
                     source: "images/prevent.png"
                     fillMode: Image.PreserveAspectFit
                 }
 
                 Image {
                     id: image7
-                    x: 275
-                    y: 497
+                    x: 274
+                    y: 441
                     width: 100
                     height: 100
                     source: "images/LOreal-Logo.png"
@@ -486,19 +559,21 @@ ApplicationWindow {
                     height: 26
                     text: qsTr("Your Result:")
                     font.pixelSize: 15
+                    font.bold: true
                 }
 
                 Text {
                     id: text5
-                    x: 114
-                    y: 400
-                    width: 173
+                    x: 104
+                    y: 402
+                    width: 192
                     height: 26
-                    text: qsTr("Healthy body. Healthy life.")
+                    text: qsTr("Healthy body.  Healthy life.")
                     font.pixelSize: 15
+                    font.bold: true
                 }
 
-                Button {
+                RoundButton {
                     id: button9
                     x: 164
                     y: 349
@@ -512,8 +587,27 @@ ApplicationWindow {
                 }
 
             }
+
+            Text {
+                id: text7
+                x: -31
+                y: 528
+                width: 463
+                height: 60
+                text: qsTr("Warning
+This application is not 100% accurate.
+The results shown cannot replace a professional diagnosis.
+For a full revision, please visit a health care professional.
+The information you provide will be saved and analyzed by a specialist,
+ to further improve our application.")
+                font.pixelSize: 8
+                horizontalAlignment: Text.AlignHCenter
+                minimumPixelSize: 9
+                font.bold: false
+            }
         }
     }
+
     Connections {
         target: user
         // Signal Handler
@@ -535,6 +629,7 @@ ApplicationWindow {
             image9.update()
         }
     }
+
     footer: TabBar {
         id: tabBar
         currentIndex: swipeView.currentIndex

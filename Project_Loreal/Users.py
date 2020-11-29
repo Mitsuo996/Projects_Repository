@@ -46,7 +46,7 @@ class Users(QObject) : #Communication between Python and Qt
         print("Location: ",self.list_users[self.active_user].location)
         print("Image: ",self.list_users[self.active_user].image)
         print("============================================")
-        self.userGender.emit('Patient = '+self.list_users[self.active_user].gender)
+        self.userGender.emit(self.list_users[self.active_user].gender)
 
 
 

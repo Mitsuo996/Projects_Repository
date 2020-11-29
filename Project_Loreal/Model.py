@@ -59,6 +59,7 @@ class Model(QObject):
 
         #Read image name
         image = tf.io.read_file("camera_image"+str(self.input_camera.count)+".jpg")
+        #image = tf.io.read_file("Inputs/image.jpg")
         image = tf.io.decode_jpeg(image, channels = 3)
         image = tf.image.resize(image, [384,384],antialias=True)
         image = tf.cast(image, tf.float32)/255
@@ -70,10 +71,10 @@ class Model(QObject):
         result = self.model.predict(np.array([image,]))
         print (result[0][0])
         if result[0][0] > 0.5:
-            model_result = "maligno"
+            model_result = "malignant"
             self.userResult.emit(model_result)
         else:
-            model_result = "benigno"
+            model_result = "benign"
             self.userResult.emit(model_result)
         self.save_result(model_result)
 
