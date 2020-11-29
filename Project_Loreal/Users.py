@@ -10,11 +10,31 @@ class User:
 
 class Users(QObject) : #Communication between Python and Qt
 
+    #Signal send to the interface
+    textResult = pyqtSignal(str, arguments=['user_gender_tx'])
+
     list_users = {"":User()}
     active_user = ""
 
     def __init__(self):
         QObject.__init__(self)
+
+    #Signals received from the interface
+    @pyqtSlot(str)
+    def set_Gender(self,gender):
+        self.list_users[self.active_user].gender = gender
+
+    @pyqtSlot(str)
+    def set_patient_name(self,name):
+        result = self.load_User(name)
+
+    @pyqtSlot(str)
+    def set_patient_age(self,age):
+        self.list_users[self.active_user].age = age
+
+    @pyqtSlot(str)
+    def set_location(self,body_part):
+        self.list_users[self.active_user].location = body_part
 
     def update_user(self):
         print("============================================")
@@ -24,8 +44,7 @@ class Users(QObject) : #Communication between Python and Qt
         print("Location: ",self.list_users[self.active_user].location)
         print("Image: ",self.list_users[self.active_user].image)
         print("============================================")
-
-        self.send_gender()
+        self.textResult.emit('Patient = '+self.list_users[self.active_user].gender)
 
 
 
@@ -42,29 +61,5 @@ class Users(QObject) : #Communication between Python and Qt
             print("New user added: ",user_name)
             self.active_user = user_name
 
-        return self.active_user
 
-    #Signal send to the interface
-    user_gender = pyqtSignal(str, arguments=['send_gender'])
-
-    @pyqtSlot(str)
-    def send_gender(self):
-        self.user_gender.emit('si funciona')
-
-    #Signals received from the interface
-    @pyqtSlot(str)
-    def set_Gender(self,gender):
-        self.list_users[self.active_user].gender = gender
-
-    @pyqtSlot(str)
-    def set_patient_name(self,name):
-        result = self.load_User(name)
-
-    @pyqtSlot(str)
-    def set_patient_age(self,age):
-      self.list_users[self.active_user].age = age
-
-    @pyqtSlot(str)
-    def set_location(self,body_part):
-      self.list_users[self.active_user].location = body_part
 
