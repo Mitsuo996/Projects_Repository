@@ -1,5 +1,5 @@
 # This Python file uses the following encoding: utf-8
-from PySide2.QtCore import Slot,QObject
+from PyQt5.QtCore import QObject, pyqtSignal, pyqtSlot, QUrl
 import cv2
 
 cam = cv2.VideoCapture(0)
@@ -13,13 +13,13 @@ class Webcam(QObject) : #Communication between Python and Qt
     def __init__(self):
         QObject.__init__(self)
 
-    @Slot(int)
+    @pyqtSlot(int)
     def capture(self,camera_shot):
         self.trigger = 0
         self.trigger = camera_shot
 
     #Signals conected to the interface
-    @Slot(int)
+    @pyqtSlot(int)
     def image(self,active):
         if active == 1:
             while True:

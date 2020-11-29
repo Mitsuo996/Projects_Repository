@@ -12,6 +12,7 @@ ApplicationWindow {
         anchors.fill: parent
         currentIndex: tabBar.currentIndex
 
+
         Page1Form {
             Rectangle {
                 id: rectangle
@@ -120,9 +121,9 @@ ApplicationWindow {
                         ListElement { text: "58" }
                         ListElement { text: "59" }
                         ListElement { text: "60" }
-	            }
-	            onActivated: {
-	            user.set_patient_age(comboBox.currentValue)
+                    }
+                    onActivated: {
+                        user.set_patient_age(comboBox.currentValue)
                     }
 
                 }
@@ -145,8 +146,8 @@ ApplicationWindow {
                     text: "+"
                     onClicked:
                     {
-                    	user.set_Gender('Man')
-                        gender.text = "Patient = Man"
+                        user.set_Gender('Man')
+                        //gender.text = "Patient = Man"
                     }
 
                 }
@@ -160,11 +161,11 @@ ApplicationWindow {
                     opacity: 1
                     visible: true
                     text: "+"
-	            onClicked:
-	            {
-	                user.set_Gender('Woman')
-	                gender.text = "Patient = Woman"
-	            }
+                    onClicked:
+                    {
+                        user.set_Gender('Woman')
+                        //gender.text = "Patient = Woman"
+                    }
                 }
 
                 Image {
@@ -215,6 +216,11 @@ ApplicationWindow {
                     text: qsTr("Enter")
                     onClicked: {
                         user.set_patient_name(textInput.text)
+                    }
+
+                    Connections {
+                        target: button7
+                        onClicked: gender.text = send_gender
                     }
                 }
             }
@@ -479,6 +485,19 @@ ApplicationWindow {
                     height: 26
                     text: qsTr("Healthy body. Healthy life.")
                     font.pixelSize: 15
+                }
+
+                Button {
+                    id: button9
+                    x: 164
+                    y: 349
+                    width: 73
+                    height: 32
+                    text: qsTr("Search")
+                    font.italic: true
+                    onClicked: {
+                        app_model.search_result(button.action)
+                    }
                 }
             }
         }

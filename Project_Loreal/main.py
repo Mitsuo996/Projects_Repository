@@ -2,8 +2,8 @@
 import sys
 import os
 
-from PySide2.QtGui import QGuiApplication
-from PySide2.QtQml import QQmlApplicationEngine
+from PyQt5.QtGui  import QGuiApplication
+from PyQt5.QtQml  import QQmlApplicationEngine
 
 from Users import Users
 from Model import Model
@@ -13,16 +13,16 @@ from Webcam import Webcam
 if __name__ == "__main__":
     app = QGuiApplication(sys.argv)
 
-    #Object instances - Mitsuo
+    #Object instances
     engine = QQmlApplicationEngine()
     Users = Users()
     webcam = Webcam()
-    model = Model()
+    model = Model(Users)
 
     model.load_model()
-
     engine.rootContext().setContextProperty("user", Users)
     engine.rootContext().setContextProperty("webcam",webcam)
+    engine.rootContext().setContextProperty("app_model",model)
 
     engine.load(os.path.join(os.path.dirname(__file__), "main.qml"))
 

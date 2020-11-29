@@ -1,6 +1,6 @@
 # This Python file uses the following encoding: utf-8
-from PySide2.QtCore import Slot,QObject
 
+from PyQt5.QtCore import QObject, pyqtSignal, pyqtSlot, QUrl
 class User:
     age = 0
     gender = ""
@@ -25,6 +25,10 @@ class Users(QObject) : #Communication between Python and Qt
         print("Image: ",self.list_users[self.active_user].image)
         print("============================================")
 
+        self.send_gender()
+
+
+
     def load_User(self,user_name):
 
         if user_name in self.list_users:
@@ -40,21 +44,27 @@ class Users(QObject) : #Communication between Python and Qt
 
         return self.active_user
 
+    #Signal send to the interface
+    user_gender = pyqtSignal(str, arguments=['send_gender'])
+
+    @pyqtSlot(str)
+    def send_gender(self):
+        self.user_gender.emit('si funciona')
+
     #Signals received from the interface
-    @Slot(str)
+    @pyqtSlot(str)
     def set_Gender(self,gender):
         self.list_users[self.active_user].gender = gender
 
-    @Slot(str)
+    @pyqtSlot(str)
     def set_patient_name(self,name):
         result = self.load_User(name)
-        print(result)
 
-    @Slot(str)
+    @pyqtSlot(str)
     def set_patient_age(self,age):
       self.list_users[self.active_user].age = age
 
-    @Slot(str)
+    @pyqtSlot(str)
     def set_location(self,body_part):
       self.list_users[self.active_user].location = body_part
 

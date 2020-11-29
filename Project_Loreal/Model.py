@@ -1,15 +1,16 @@
 # This Python file uses the following encoding: utf-8
-from PySide2 import QtCore
+from PyQt5.QtCore import QObject, pyqtSignal, pyqtSlot, QUrl
 from Users import User
 
 from keras.models import load_model
 import keras
 import tensorflow
 
-class Model(QtCore.QObject):
+class Model(QObject):
 
-    def __init__(self):
-        QtCore.QObject.__init__(self)
+    def __init__(self,Users):
+        QObject.__init__(self)
+        self.input_users = Users
 
     model_path = "./Models/classification_model.h5"
 
@@ -17,15 +18,15 @@ class Model(QtCore.QObject):
         self.model = load_model(self.model_path)
         print("===========================================")
         print("Model Loaded")
-        print(self.models)
+        print(self.model)
 
 
-    def verify_inputs(user_input):
+    def verify_inputs(self):
         print("==============Verification==================")
-        print("Age: ",user_input.age)
-        print("Gender: ",user_input.gender)
-        print("Location: ",user_input.location)
-        print("Image: ",user_input.image)
+        print("Age: ",self.input_users.list_users[self.input_users.active_user].age)
+        print("Gender: ",self.input_users.list_users[self.input_users.active_user].gender)
+        print("Location: ",self.input_users.list_users[self.input_users.active_user].location)
+        print("Image: ",self.input_users.list_users[self.input_users.active_user].image)
         print("============================================")
 
     def predict_model():
@@ -33,3 +34,11 @@ class Model(QtCore.QObject):
 
     def train_model():
         pass
+
+    @pyqtSlot(str)
+    def search_result(self,arg):
+      print("===========================================")
+      print("Model: Start")
+      self.verify_inputs()
+
+
