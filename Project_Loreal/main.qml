@@ -242,7 +242,10 @@ ApplicationWindow {
                         y: 9
                         width: 330
                         height: 299
+                        visible: false
                         source: "image.png"
+                        asynchronous: true
+                        cache: false
                         fillMode: Image.PreserveAspectFit
                     }
                 }
@@ -520,6 +523,17 @@ ApplicationWindow {
         target: app_model
         // Signal Handler
         onUserResult: text6.text = user_result_tx
+    }
+
+    Connections {
+        target: webcam
+        // Signal Handler
+        onUserImage:
+        {
+            image9.visible = true
+            image9.source = user_image_tx
+            image9.update()
+        }
     }
     footer: TabBar {
         id: tabBar

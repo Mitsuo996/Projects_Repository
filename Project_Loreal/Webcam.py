@@ -4,12 +4,13 @@ import cv2
 
 cam = cv2.VideoCapture(0)
 
-class Webcam:
-    def __init__(self):
-        self.image = 0
-        self.capture = 0
-
 class Webcam(QObject) : #Communication between Python and Qt
+
+    #Signal send to the interface
+    userImage = pyqtSignal(str, arguments=['user_image_tx'])
+
+    count = False
+
     def __init__(self):
         QObject.__init__(self)
 
@@ -21,9 +22,10 @@ class Webcam(QObject) : #Communication between Python and Qt
     #Signals conected to the interface
     @pyqtSlot(int)
     def image(self,active):
-        if active == 1:
+            self.count = not self.count
             while True:
-                #print (self.trigger)
+                if not cam.isOpened():
+                    cam.open(0)
                 ret, frame = cam.read()
                 if not ret:
                     print("Failed to Grab Frame")
@@ -34,10 +36,15 @@ class Webcam(QObject) : #Communication between Python and Qt
                 k = cv2.waitKey(1)
                 if k%256 == 32:
                     # SPACE pressed
-                    cv2.imwrite("image.jpg", frame)
+                    image_name = "camera_image"+str(self.count)+".jpg"
+                    cv2.imwrite(image_name, frame)
                     print("Capture")
                     break
 
             cam.release()
             cv2.destroyAllWindows()
+
+            self.userImage.emit(image_name)
+
+
 

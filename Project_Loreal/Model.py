@@ -1,6 +1,8 @@
 # This Python file uses the following encoding: utf-8
 from PyQt5.QtCore import QObject, pyqtSignal, pyqtSlot, QUrl
 from Users import User
+from Webcam import Webcam
+
 from keras.models import load_model
 import keras
 import pandas as pd
@@ -22,9 +24,10 @@ class Model(QObject):
     #Signal send to the interface
     userResult = pyqtSignal(str, arguments=['user_result_tx'])
 
-    def __init__(self,Users):
+    def __init__(self,Users,Webcam):
         QObject.__init__(self)
         self.input_users = Users
+        self.input_camera = Webcam
 
     model_path = "./Models/LorealEffNetB3.h5"
 
@@ -54,7 +57,7 @@ class Model(QObject):
     def predict_model(self):
 
         #Read image name
-        image = tf.io.read_file("./Inputs/image.jpg")
+        image = tf.io.read_file("camera_image"+str(self.input_camer.count)+".jpg")
         image = tf.io.decode_jpeg(image, channels = 3)
         image = tf.image.resize(image, [384,384],antialias=True)
         image = tf.cast(image, tf.float32)/255
