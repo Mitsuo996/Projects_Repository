@@ -81,12 +81,5 @@ class Model(QObject):
       print("===========================================")
       print("Model: Start")
       self.predict_model()
-      if self.verify_inputs() == True:
-          #Preprocess Image
-          #Load Image
-          #Send Result
-          pass
-      else:
-          pass
 
 
