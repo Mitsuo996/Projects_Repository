@@ -17,7 +17,7 @@ if __name__ == "__main__":
     engine = QQmlApplicationEngine()
     Users  = Users()
     webcam = Webcam()
-    model  = Model(Users)
+    model  = Model(Users,webcam)
     model.load_model()
 
     engine.rootContext().setContextProperty("user", Users)

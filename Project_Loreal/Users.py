@@ -6,6 +6,8 @@ class User:
     gender = ""
     location = ""
     image = ""
+    name = ""
+    result =""
 
 
 class Users(QObject) : #Communication between Python and Qt

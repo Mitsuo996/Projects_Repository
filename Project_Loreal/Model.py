@@ -57,7 +57,7 @@ class Model(QObject):
     def predict_model(self):
 
         #Read image name
-        image = tf.io.read_file("camera_image"+str(self.input_camer.count)+".jpg")
+        image = tf.io.read_file("camera_image"+str(self.input_camera.count)+".jpg")
         image = tf.io.decode_jpeg(image, channels = 3)
         image = tf.image.resize(image, [384,384],antialias=True)
         image = tf.cast(image, tf.float32)/255
