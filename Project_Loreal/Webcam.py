@@ -2,6 +2,7 @@
 from PySide2.QtCore import Slot,QObject
 import cv2
 
+#TEST
 cam = cv2.VideoCapture(0)
 
 class Webcam:
@@ -23,7 +24,7 @@ class Webcam(QObject) : #Communication between Python and Qt
     def image(self,active):
         if active == 1:
             while True:
-                print (self.trigger)
+                #print (self.trigger)
                 ret, frame = cam.read()
                 if not ret:
                     print("Failed to Grab Frame")
