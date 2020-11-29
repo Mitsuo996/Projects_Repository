@@ -34,7 +34,7 @@ class Webcam(QObject) : #Communication between Python and Qt
                 k = cv2.waitKey(1)
                 if k%256 == 32:
                     # SPACE pressed
-                    cv2.imwrite("image.png", frame)
+                    cv2.imwrite("image.jpg", frame)
                     print("Capture")
                     break
 
