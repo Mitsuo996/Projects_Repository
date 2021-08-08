@@ -4,3 +4,5 @@ Project_Loreal/.DS_Store
 *.pyc
 Project_Loreal/main.pyproject.user
 *.pyc
+Project_Loreal.zip
+Project_Loreal/Models/LorealEffNetB3.h5
